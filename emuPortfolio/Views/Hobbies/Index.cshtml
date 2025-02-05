@@ -1,0 +1,22 @@
+﻿@using emuPortfolio.Models.Entity
+@model List<TblHobbies>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h2>My Hobbies</h2>
+<form method="post">
+
+    @foreach (var x in Model)
+    {
+        <input type="hidden" name="HobbiesID" value="@x.HobbiesID " />
+        <label>Lorem ipsum!</label>
+        <textarea rows="10" class="form-control" name="Description1">@x.Description1</textarea>
+        <label>esLorem 10s!</label>
+        <textarea rows="10" class="form-control" name="Description2">@x.Description2</textarea>
+    }
+    <br />
+    <button class="btn btn-success">Update</button>
+</form>

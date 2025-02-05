@@ -33,5 +33,6 @@ namespace emuPortfolio.Models.Entity
         public virtual DbSet<TblHobbies> TblHobbies { get; set; }
         public virtual DbSet<TblLogin> TblLogin { get; set; }
         public virtual DbSet<TblSkills> TblSkills { get; set; }
+        public virtual DbSet<TblSocialMedia> TblSocialMedia { get; set; }
     }
 }

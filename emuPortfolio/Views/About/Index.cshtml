@@ -1,28 +1,48 @@
-﻿
+﻿@using emuPortfolio.Models.Entity
+@model List<TblAbout>
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>About</h2>
 
-<table class="table table-bordered">
 
-    <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>City</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>dasdsa</td>
-        <td>adana</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>dasdsa</td>
-        <td>adana</td>
-    </tr>
 
-</table>
+<h2>About Me!</h2>
 
+<form method="post">
+
+    @foreach (var x in Model)
+    {
+        <input type="hidden" name="HobbiesID" value="@x.AboutID" />
+
+        <label>Name</label>
+        <input type="text" name="Name" class="form-control" value="@x.Name" />
+        <br />
+        <label>Surname</label>
+        <input type="text" name="Surname" class="form-control" value="@x.Surname" />
+        <br />
+
+        <label>Adress</label>
+        <input type="text" name="Adress" class="form-control" value="@x.Adress" />
+        <br />
+
+        <label>Phone</label>
+        <input type="text" name="Phone" class="form-control" value="@x.Phone" />
+        <br />
+
+        <label>Mail</label>
+        <input type="text" name="Mail" class="form-control" value="@x.Mail" />
+        <br />
+
+        <label>Picture</label>
+        <input type="text" name="Picture" class="form-control" value="@x.Picture" />
+        <br />
+        <label>Description</label>
+        <textarea rows="10" class="form-control" name="Description">@x.Description</textarea>
+
+    }
+    <br />
+    <button class="btn btn-success">Update</button>
+</form>

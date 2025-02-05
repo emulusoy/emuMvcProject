@@ -57,5 +57,11 @@ namespace emuPortfolio.Controllers
 
             return PartialView();
         }
+
+        public PartialViewResult SocialMedia()
+        {
+            var valuesSocialMedia = data.TblSocialMedia.ToList();
+            return PartialView(valuesSocialMedia);
+        }
     }
 }

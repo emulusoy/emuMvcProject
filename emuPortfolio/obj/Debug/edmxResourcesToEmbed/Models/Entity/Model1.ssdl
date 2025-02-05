@@ -77,6 +77,15 @@
     <Property Name="Title" Type="nvarchar" MaxLength="50" />
     <Property Name="Ratio" Type="tinyint" />
   </EntityType>
+  <EntityType Name="TblSocialMedia">
+    <Key>
+      <PropertyRef Name="SocialMediaID" />
+    </Key>
+    <Property Name="SocialMediaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link" Type="nvarchar" MaxLength="510" />
+    <Property Name="Icon" Type="varchar" MaxLength="50" />
+  </EntityType>
   <EntityContainer Name="emuPortfolioModelStoreContainer">
     <EntitySet Name="TblAbout" EntityType="Self.TblAbout" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblCertificate" EntityType="Self.TblCertificate" Schema="dbo" store:Type="Tables" />
@@ -86,5 +95,6 @@
     <EntitySet Name="TblHobbies" EntityType="Self.TblHobbies" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblLogin" EntityType="Self.TblLogin" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblSkills" EntityType="Self.TblSkills" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblSocialMedia" EntityType="Self.TblSocialMedia" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

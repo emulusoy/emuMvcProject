@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\eMu\\source\\repos\\emuPortfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{57395A14-C0A1-4723-9FF1-8F4D0ED6F5A5}|emuPortfolio\\emuPortfolio.csproj|c:\\users\\emu\\source\\repos\\emuportfolio\\emuportfolio\\views\\certificate\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57395A14-C0A1-4723-9FF1-8F4D0ED6F5A5}|emuPortfolio\\emuPortfolio.csproj|solutionrelative:emuportfolio\\views\\certificate\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{57395A14-C0A1-4723-9FF1-8F4D0ED6F5A5}|emuPortfolio\\emuPortfolio.csproj|c:\\users\\emu\\source\\repos\\emuportfolio\\emuportfolio\\views\\socialmedia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{57395A14-C0A1-4723-9FF1-8F4D0ED6F5A5}|emuPortfolio\\emuPortfolio.csproj|solutionrelative:emuportfolio\\views\\socialmedia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57395A14-C0A1-4723-9FF1-8F4D0ED6F5A5}|emuPortfolio\\emuPortfolio.csproj|c:\\users\\emu\\source\\repos\\emuportfolio\\emuportfolio\\views\\certificate\\getcertificate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57395A14-C0A1-4723-9FF1-8F4D0ED6F5A5}|emuPortfolio\\emuPortfolio.csproj|solutionrelative:emuportfolio\\views\\certificate\\getcertificate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57395A14-C0A1-4723-9FF1-8F4D0ED6F5A5}|emuPortfolio\\emuPortfolio.csproj|c:\\users\\emu\\source\\repos\\emuportfolio\\emuportfolio\\controllers\\certificatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57395A14-C0A1-4723-9FF1-8F4D0ED6F5A5}|emuPortfolio\\emuPortfolio.csproj|solutionrelative:emuportfolio\\controllers\\certificatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{57395A14-C0A1-4723-9FF1-8F4D0ED6F5A5}|emuPortfolio\\emuPortfolio.csproj|c:\\users\\emu\\source\\repos\\emuportfolio\\emuportfolio\\controllers\\socialmediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57395A14-C0A1-4723-9FF1-8F4D0ED6F5A5}|emuPortfolio\\emuPortfolio.csproj|solutionrelative:emuportfolio\\controllers\\socialmediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetCertificate.cshtml",
-              "DocumentMoniker": "C:\\Users\\eMu\\source\\repos\\emuPortfolio\\emuPortfolio\\Views\\Certificate\\GetCertificate.cshtml",
-              "RelativeDocumentMoniker": "emuPortfolio\\Views\\Certificate\\GetCertificate.cshtml",
-              "ToolTip": "C:\\Users\\eMu\\source\\repos\\emuPortfolio\\emuPortfolio\\Views\\Certificate\\GetCertificate.cshtml",
-              "RelativeToolTip": "emuPortfolio\\Views\\Certificate\\GetCertificate.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-05T13:07:52.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CertificateController.cs",
-              "DocumentMoniker": "C:\\Users\\eMu\\source\\repos\\emuPortfolio\\emuPortfolio\\Controllers\\CertificateController.cs",
-              "RelativeDocumentMoniker": "emuPortfolio\\Controllers\\CertificateController.cs",
-              "ToolTip": "C:\\Users\\eMu\\source\\repos\\emuPortfolio\\emuPortfolio\\Controllers\\CertificateController.cs",
-              "RelativeToolTip": "emuPortfolio\\Controllers\\CertificateController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBcAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T13:01:58.887Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\eMu\\source\\repos\\emuPortfolio\\emuPortfolio\\Views\\Certificate\\Index.cshtml",
-              "RelativeDocumentMoniker": "emuPortfolio\\Views\\Certificate\\Index.cshtml",
-              "ToolTip": "C:\\Users\\eMu\\source\\repos\\emuPortfolio\\emuPortfolio\\Views\\Certificate\\Index.cshtml",
-              "RelativeToolTip": "emuPortfolio\\Views\\Certificate\\Index.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAADYAAAAyAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\eMu\\source\\repos\\emuPortfolio\\emuPortfolio\\Views\\SocialMedia\\Index.cshtml",
+              "RelativeDocumentMoniker": "emuPortfolio\\Views\\SocialMedia\\Index.cshtml",
+              "ToolTip": "C:\\Users\\eMu\\source\\repos\\emuPortfolio\\emuPortfolio\\Views\\SocialMedia\\Index.cshtml",
+              "RelativeToolTip": "emuPortfolio\\Views\\SocialMedia\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-05T13:01:17.961Z",
+              "WhenOpened": "2025-02-05T18:47:35.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SocialMediaController.cs",
+              "DocumentMoniker": "C:\\Users\\eMu\\source\\repos\\emuPortfolio\\emuPortfolio\\Controllers\\SocialMediaController.cs",
+              "RelativeDocumentMoniker": "emuPortfolio\\Controllers\\SocialMediaController.cs",
+              "ToolTip": "C:\\Users\\eMu\\source\\repos\\emuPortfolio\\emuPortfolio\\Controllers\\SocialMediaController.cs",
+              "RelativeToolTip": "emuPortfolio\\Controllers\\SocialMediaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T18:46:21.19Z",
               "EditorCaption": ""
             }
           ]

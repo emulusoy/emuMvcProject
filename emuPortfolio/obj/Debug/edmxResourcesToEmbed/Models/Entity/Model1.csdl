@@ -86,5 +86,15 @@
     <EntitySet Name="TblHobbies" EntityType="Self.TblHobbies" />
     <EntitySet Name="TblLogin" EntityType="Self.TblLogin" />
     <EntitySet Name="TblSkills" EntityType="Self.TblSkills" />
+    <EntitySet Name="TblSocialMedia" EntityType="emuPortfolioModel.TblSocialMedia" />
   </EntityContainer>
+  <EntityType Name="TblSocialMedia">
+    <Key>
+      <PropertyRef Name="SocialMediaID" />
+    </Key>
+    <Property Name="SocialMediaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link" Type="String" MaxLength="510" FixedLength="false" Unicode="true" />
+    <Property Name="Icon" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
 </Schema>
