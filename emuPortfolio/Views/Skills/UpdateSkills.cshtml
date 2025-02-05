@@ -1,0 +1,23 @@
+﻿@model emuPortfolio.Models.Entity.TblSkills
+
+@{
+    ViewBag.Title = "UpdateSkills";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Update Skills</h2>
+
+
+<form method="post">
+    <input type="hidden" name="SkillsID" value="@Model.SkillsID" />
+    @Html.Label("Skills Title")
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    @Html.Label("Ratio")
+    @Html.TextBoxFor(x => x.Ratio, new { @class = "form-control" })
+    <br />
+
+
+
+    <button class="btn btn-success">Update Skills</button>
+</form>

@@ -1,0 +1,24 @@
+﻿@using emuPortfolio.Models.Entity
+@model List<TblContact>
+
+
+<div class="resume-section-content">
+    <form method="post">
+        <h2 class="mb-5">Contact me!</h2>
+
+        <label>Name and Surname</label>
+        <input type="text" class="form-control" name="NameSurname" />
+
+        <label>Mail</label>
+        <input type="text" class="form-control" name="Email" />
+
+        <label>Title</label>
+        <input type="text" class="form-control" name="Title"/>
+
+        <label>Message</label>
+        <input type="text" class="form-control" name="Message" />
+        <br>
+        <button class="btn btn-info">Send Message</button>
+    </form>
+    
+</div>

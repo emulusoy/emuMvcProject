@@ -1,0 +1,11 @@
+﻿@using emuPortfolio.Models.Entity
+@model List<TblHobbies>
+
+<div class="resume-section-content">
+    @foreach (var x in Model)
+    {
+    <h2 class="mb-5">Hobbies</h2>
+    <p>@x.Description1</p>
+    <p class="mb-0">@x.Description2</p>
+    }
+</div>

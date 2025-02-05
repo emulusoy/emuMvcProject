@@ -1,0 +1,34 @@
+﻿@using emuPortfolio.Models.Entity
+@model List<TblExperience>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2>Experience List</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Subtitle</th>
+        <th>Date</th>
+        <th>Delete</th>
+        <th>Update</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.ExperienceID</td>
+            <td>@x.Title</td>
+            <td>@x.Subtitle</td>
+            <td>@x.Date</td>
+            <td><a href="/Experience/DeleteExperience/@x.ExperienceID" class="btn btn-danger">Delete</a></td> @*Burada id yi bulup contollerde sildik*@
+            <td><a href="/Experience/GetExperience/@x.ExperienceID" class="btn btn-success">Update</a></td>
+
+        </tr>       
+    }
+</table>
+<br />
+<a href="/Experience/AddExperience" class="btn btn-primary">Add New Experience</a>
+

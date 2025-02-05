@@ -1,0 +1,24 @@
+﻿@model emuPortfolio.Models.Entity.TblCertificate
+
+@{
+    ViewBag.Title = "GetCertificate";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Update Certificate</h2>
+
+<form method="post">
+    <input type="hidden" name="CertificateID" value="@Model.CertificateID" />
+
+    @Html.Label("Description")
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+
+    @Html.Label("Date")
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-success">Update Certificate</button>
+    <a href="/Certificate/DeleteCertificate/@ViewBag.bag" class="btn btn-danger">Delete</a>
+</form>
+
