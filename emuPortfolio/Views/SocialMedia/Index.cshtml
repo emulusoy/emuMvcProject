@@ -1,0 +1,90 @@
+﻿@using emuPortfolio.Models.Entity
+@model List<TblSocialMedia>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="card-title">Social Media Operations!</h2>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">Add New Icon</button>
+                                <br />
+                                <br />
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 10px">#</th>
+                                            <th>SocialMedia</th>
+                                            <th style="width: 100px">Transactions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var x in Model)
+                                        {
+                                           
+                                            <tr>
+                                                <td>@x.SocialMediaID</td>
+                                                <td>@x.Name</td>
+                                                <td>
+                                                    <a class="btn btn-outline-secondary btn-sm" href="/SocialMedia/UpdateSocialMediaIcon/@x.SocialMediaID">
+                                                        <i class="fas fa-pencil-alt"></i>
+                                                        Update
+                                                    </a>
+                                                    <a class="btn btn-outline-secondary btn-sm" href="/SocialMedia/DeleteSocialMediaIcon/@x.SocialMediaID">
+                                                        <i class="fas fa-trash"></i>
+                                                        Delete
+                                                    </a>
+
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+        <div class="modal" id="modal1">
+            <div class="modal-dialog">
+                
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <h2 class="modal-title" >Add New Social Media Icon Panel</h2>
+                     </div>
+                     <form method="post" action="/SocialMedia/AddNewSocialMediaIcon">
+                         <div class="modal-body">
+                             <label>Social Media Name</label>
+                             <input type="text" name="Name" class="form-control" />
+                             <br />
+                             <label>Social Media Link</label>
+                             <input type="text" name="Link" class="form-control" />
+                             <br />
+                             <label>Social Media Icon Class Name</label>
+                             <input type="text" name="Icon" class="form-control" />
+                             <br />
+                             <button class="btn btn-outline-dark">Save</button>
+                         </div>
+                     </form>
+                 </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
