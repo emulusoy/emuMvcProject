@@ -1,0 +1,30 @@
+﻿@model emuPortfolio.Models.Entity.TblExperience
+
+
+@{
+    ViewBag.Title = "GetExperience";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Update the Experience</h2>
+
+<form method="post">
+    @Html.Label("Experience ID")
+    @Html.TextBoxFor(x => x.ExperienceID, new { @class = "form-control" })
+    <br />
+    @Html.Label("Title")
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    @Html.Label("Subtitle")
+    @Html.TextBoxFor(x => x.Subtitle, new { @class = "form-control" })
+    <br />
+    @Html.Label("Description")
+    @Html.TextAreaFor(x => x.Description, new { @class = "form-control" })
+    <br />
+    @Html.Label("Date")
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+    <br />
+
+
+    <button class="btn btn-info">Update Experience</button>
+</form>

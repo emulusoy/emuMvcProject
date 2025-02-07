@@ -90,6 +90,7 @@
           <Property Name="Name" Type="nvarchar" MaxLength="50" />
           <Property Name="Link" Type="nvarchar" MaxLength="510" />
           <Property Name="Icon" Type="varchar" MaxLength="50" />
+          <Property Name="Status" Type="bit" />
         </EntityType>
         <EntityContainer Name="emuPortfolioModelStoreContainer">
           <EntitySet Name="TblAbout" EntityType="Self.TblAbout" Schema="dbo" store:Type="Tables" />
@@ -202,6 +203,7 @@
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Link" Type="String" MaxLength="510" FixedLength="false" Unicode="true" />
           <Property Name="Icon" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="Boolean" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -297,6 +299,7 @@
           <EntitySetMapping Name="TblSocialMedia">
             <EntityTypeMapping TypeName="emuPortfolioModel.TblSocialMedia">
               <MappingFragment StoreEntitySet="TblSocialMedia">
+                <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="Icon" ColumnName="Icon" />
                 <ScalarProperty Name="Link" ColumnName="Link" />
                 <ScalarProperty Name="Name" ColumnName="Name" />

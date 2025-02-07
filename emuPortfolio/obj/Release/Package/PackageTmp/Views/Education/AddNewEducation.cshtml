@@ -1,0 +1,29 @@
+﻿@model emuPortfolio.Models.Entity.TblEducation
+
+@{
+    ViewBag.Title = "AddNewEducation";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Add New Education</h2>
+
+<form method="post">
+    <br />
+    @Html.Label("Education Title")
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    @Html.Label("Subtitle")
+    @Html.TextBoxFor(x => x.Subtitle1, new { @class = "form-control" })
+    <br />
+    @Html.Label("Subtitle")
+    @Html.TextBoxFor(x => x.Subtitle2, new { @class = "form-control" })
+    <br />
+    @Html.Label("AGNO")
+    @Html.TextBoxFor(x => x.GANO, new { @class = "form-control" })
+    <br />
+    @Html.Label("Date")
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-info">Add New Education</button>
+</form>

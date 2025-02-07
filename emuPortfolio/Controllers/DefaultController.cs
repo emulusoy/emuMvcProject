@@ -7,6 +7,7 @@ using emuPortfolio.Models.Entity;
 
 namespace emuPortfolio.Controllers
 {
+    [AllowAnonymous]
     public class DefaultController : Controller
     {
         // GET: Default
@@ -60,7 +61,7 @@ namespace emuPortfolio.Controllers
 
         public PartialViewResult SocialMedia()
         {
-            var valuesSocialMedia = data.TblSocialMedia.ToList();
+            var valuesSocialMedia = data.TblSocialMedia.Where(x=>x.Status==true).ToList();
             return PartialView(valuesSocialMedia);
         }
     }

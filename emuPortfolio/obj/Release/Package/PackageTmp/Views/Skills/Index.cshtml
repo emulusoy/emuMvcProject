@@ -1,0 +1,99 @@
+﻿@using emuPortfolio.Models.Entity
+@model List<TblSkills>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@{ string color = "";}
+@{ string symbol = "";}
+
+
+
+<!DOCTYPE html>
+<html>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="card-title">My Skills</h2>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <a href="/Skills/AddNewSkills" class="btn btn-dark">Add New Skills</a>
+                                <br />
+                                <br />
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 10px">#</th>
+                                            <th>Task</th>
+                                            <th>Progress</th>
+                                            <th style="width: 40px">Ratio</th>
+                                            <th style="width: 100px">Transactions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var x in Model)
+                                        {
+                                            if(x.Ratio >=0 && x.Ratio <= 50)
+                                            {
+                                                color = "progress-bar bg-danger";
+                                                symbol = "badge bg-danger";
+                                            }
+                                            if (x.Ratio >= 51 && x.Ratio <= 70)
+                                            {
+                                                color = "progress-bar bg-warning";
+                                                symbol = "badge bg-warning";
+                                            }
+                                            if (x.Ratio >= 71 && x.Ratio <= 85)
+                                            {
+                                                color = "progress-bar bg-primary";
+                                                symbol = "badge bg-primary";
+                                            }
+                                            if (x.Ratio >= 86 && x.Ratio <= 100)
+                                            {
+                                                color = "progress-bar bg-success";
+                                                symbol = "badge bg-success";
+                                            }
+                                        <tr>
+                                            <td>@x.SkillsID</td>
+                                            <td>@x.Title</td>
+                                            <td>
+                                                <div class="progress progress-xs">
+                                                    <div class="@color" style="width: @x.Ratio%"></div>
+                                                </div>
+                                            </td>
+                                            <td><span class="@symbol">@x.Ratio%</span></td>
+                                            <td>
+                                                <a class="btn btn-outline-secondary btn-sm" href="/Skills/UpdateSkills/@x.SkillsID">
+                                                    <i class="fas fa-pencil-alt"></i> 
+                                                    Update 
+                                                </a>
+                                                <a class="btn btn-outline-secondary btn-sm" href="/Skills/DeleteSkills/@x.SkillsID">
+                                                    <i class="fas fa-trash"></i>
+                                                    Delete
+                                                </a>
+
+                                            </td>
+                                        </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+    </div>
+</body>
+</html>

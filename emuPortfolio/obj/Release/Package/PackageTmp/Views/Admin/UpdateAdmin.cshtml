@@ -1,0 +1,21 @@
+﻿@model emuPortfolio.Models.Entity.TblLogin
+@{
+    ViewBag.Title = "UpdateAdmin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Update the Admin</h2>
+
+<form method="post">
+    @Html.Label("ID")
+    @Html.TextBoxFor(x => x.LoginID, new { @class = "form-control" })
+    <br />
+    @Html.Label("Username")
+    @Html.TextBoxFor(x => x.Username, new { @class = "form-control" })
+    <br />
+    @Html.Label("Password")
+    @Html.TextBoxFor(x => x.Password, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Update</button>
+</form>
+

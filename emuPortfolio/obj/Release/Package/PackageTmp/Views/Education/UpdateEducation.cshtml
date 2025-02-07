@@ -1,0 +1,30 @@
+﻿@model emuPortfolio.Models.Entity.TblEducation
+
+@{
+    ViewBag.Title = "UpdateEducation";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Update Education</h2>
+
+<form method="post">
+    <input type="hidden" name="EducationID" value="@Model.EducationID" />
+    <br />
+    @Html.Label("Education Title")
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    @Html.Label("Subtitle")
+    @Html.TextBoxFor(x => x.Subtitle1, new { @class = "form-control" })
+    <br />
+    @Html.Label("Subtitle")
+    @Html.TextBoxFor(x => x.Subtitle2, new { @class = "form-control" })
+    <br />
+    @Html.Label("AGNO")
+    @Html.TextBoxFor(x => x.GANO, new { @class = "form-control" })
+    <br />
+    @Html.Label("Date")
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-info">Edit and Save</button>
+</form>

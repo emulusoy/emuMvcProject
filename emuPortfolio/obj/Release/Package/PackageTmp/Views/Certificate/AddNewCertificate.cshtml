@@ -1,0 +1,22 @@
+﻿@model emuPortfolio.Models.Entity.TblCertificate
+
+@{
+    ViewBag.Title = "AddNewCertificate";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Add New Certificate</h2>
+
+<form method="post">
+
+
+    @Html.Label("Description")
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+
+    @Html.Label("Date")
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-success">Add Certificate</button>
+</form>

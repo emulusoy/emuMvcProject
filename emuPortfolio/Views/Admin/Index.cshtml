@@ -1,0 +1,33 @@
+﻿@using emuPortfolio.Models.Entity
+@model List<TblLogin>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Admin Panel</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>UserName</th>
+        <th style="width:70px" >########################</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.LoginID</td>
+            <td>@x.Username</td>
+            <td><a href="/Admin/DeleteAdmnin/@x.LoginID" class="btn btn-danger">Delete</a> @*Burada id yi bulup contollerde sildik*@
+            <a href="/Admin/UpdateAdmin/@x.LoginID" class="btn btn-success">Update</a></td>
+
+        </tr>
+
+    }
+</table>
+<br />
+<a href="/Admin/AddAdmin" class="btn btn-primary">Add New Admin</a>
+
+

@@ -41,13 +41,15 @@ namespace emuPortfolio.Controllers
             value.Name = p.Name;
             value.Icon = p.Icon;
             value.Link = p.Link;
+            value.Status = true;
             repo.TUpdate(value);
             return RedirectToAction("Index");
         }
         public ActionResult DeleteSocialMediaIcon(int id)
         {
-            var findId = repo.Find(x => x.SocialMediaID == id);
-            repo.TDelete(findId);
+            var find = repo.Find(x => x.SocialMediaID == id);
+            find.Status = false;
+            repo.TUpdate(find);
             return RedirectToAction("Index");
         }
     }
